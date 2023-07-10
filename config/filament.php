@@ -120,8 +120,8 @@ return [
     */
 
     'resources' => [
-        'namespace' => 'App\\Builder\\Resources',
-        'path' => app_path('Builder/Resources'),
+        'namespace' => 'App\\Filament\\Resources',
+        'path' => app_path('Filament/Resources'),
         'register' => [],
     ],
 
@@ -169,7 +169,7 @@ return [
     |
     */
 
-    'dark_mode' => false,
+    'dark_mode' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -235,14 +235,14 @@ return [
         'forms' => [
             'actions' => [
                 'alignment' => 'left',
-                'are_sticky' => false,
+                'are_sticky' => true,
             ],
             'have_inline_labels' => false,
         ],
         'footer' => [
             'should_show_logo' => false,
         ],
-        'max_content_width' => null,
+        'max_content_width' => 'full',
         'notifications' => [
             'vertical_alignment' => 'top',
             'alignment' => 'right',
